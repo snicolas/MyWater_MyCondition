@@ -1,0 +1,15 @@
+FACTS
+http://who.int/water_sanitation_health/en/index.html
+http://water.org/water-crisis/water-facts/water/
+http://www.sciencekids.co.nz/sciencefacts/water.html
+http://www.gcwsa.com/Facts%20About%20Water.htm
+http://matadornetwork.com/change/40-shocking-facts-about-water/
+http://www.allaboutwater.org/water-facts.html
+harvesting
+<div class="one_fourth first">
+          <div class="column_content">
+            <h4 class="blue"> Photoshop</h4>
+            <input class="knob" data-readonly="true" data-width="120" data-min="0" data-angleoffset="0"
+                                data-displayprevious="true" data-fgcolor="#cfdee7" data-bgcolor="#0d4667" value="65">
+          </div>
+        </div>
