@@ -1,0 +1,69 @@
+<?php
+$username = "root";
+$password = "vineeta";
+$hostname = "localhost"; 
+$database = "MyWater";
+
+//connection to the database
+$dbhandle = mysql_connect($hostname, $username, $password, $database)
+  or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+mysql_select_db($database) or die(mysql_error()); ?>
+<?php 
+ $A=$_POST['state'];
+ $B=$_POST['district'];
+echo $A."<br>".$B;
+?>
+
+<?php   
+	if($B)
+             {
+ 		$data = mysql_query("SELECT DISTINCT state ,district ,quality from `2009` having district='$B' ")  or die(mysql_error()); 
+ 		Print "<table border cellpadding=3>"; 
+ 		while($info = mysql_fetch_array( $data )) 
+ 		{ $C=$info['quality'];
+ 		Print "<tr>"; 
+ 		Print "<th>State:</th> <td>".$info['state'] . "</td> "; 
+ 		Print "<th>District:</th> <td>".$info['district'] . " </td>"; 
+ 		Print "<th>Quality</th> <td>".$info['quality'] . "</td></tr> "; 
+		$sql=mysql_query(" SELECT * from `qualitysheet` where QUALITY= '$C' ") or die(mysql_error());
+	
+		//Print "<br><table border cellpadding=3>"; 
+		//Print "<br><tr>"; 
+		while($cause = mysql_fetch_array( $sql )) 
+		{Print "</table>";
+		Print "<br><table border cellpadding=3>"; 
+		Print "<br><tr>"; 
+		Print "<th>Cause:</th><td>".$cause['CAUSE'] . "</td> ";
+		Print "<th>IMPACT:</th><td>".$cause['IMPACT'] . "</td> ";	
+		Print "<th>REMEDIES:</th><td>".$cause['REMEDIES'] . "</td> </tr>"; 
+		Print "</table>";
+
+		Print "<table>";
+ 		} 
+ 		Print "</table>"; 
+
+		
+             }
+?> 
+<!DOCTYPE html>
+<html>
+<body>
+<form action="table.php" method="POST">
+<?php if ($A)
+	  { $disto="Select Distinct district from `2009` where state='$A'";
+           $d=mysql_query($disto);
+	   echo "<select name=\"district\">"; 
+	   echo "<option size =10 ></option>";
+	   while($row2 = mysql_fetch_array($d)) 
+		{        
+	     echo "<option value='".$row2['district']."'>".$row2['district']."</option>"; 
+		}
+	   echo "</select>";
+	   echo "<button type='submit'>"."Lets GO"."</button>";
+          }?>
+
+</form>
+</body>
+</html>
+

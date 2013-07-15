@@ -35,7 +35,7 @@
   <div id="sidebar"> 
     <!-- the  sidebar --> 
     <!-- logo --> 
-    <a href="#" id="logo"> <img src="./images/text.PNG" alt="hello" /></a> 
+    <a href="#" id="logo"> <img src="./images/q.png" alt="hello" /></a> 
     <!-- navigation menu -->
     <ul id="navigation">
       <li><a href="#home" class="active">Home</a></li>
@@ -76,10 +76,13 @@
         <div class="clear"> </div>
 
 <!-----SEARCH------->
-    <br><form class="form-search"> 
-    <input type="text" class="span4" align="center">
-     <button type="submit" class="btn">Search State</button>  
- </form>
+    <br><form class="form-search" style="width: 260px; margin: 0 auto;" action="state.php" method="POST"> 
+	<select name="region" >
+	<option value="STATE">STATE</option>
+	<option value="DISTRICT">DISTRICT</option>
+	</select>
+	<button type="submit" style="width: 220px; margin: 0 auto; color: darkgreen; background-color: grey; border: 2pt ridge grey;" class="btn" >Search State</button> 
+</form>
         <!-- services -->
         <div class="one_half first">
           <div class="column_content">
@@ -225,22 +228,19 @@
       <!-- page about us -->
 	  <h3 class="page_title"> Meet Us</h3>
       <div class="page_content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.</p>
+        <p> We are the Team of Two. We are working for the first time together on a Web-Application using OpenSource.
+		    We have worked very well for this project and understood many new languages. We have our Personal blogs on GitHub.
+		    And we also have Repository on GitHub for our Project - My Water_My Condition.
+          </p>
         <h4 class="blue"> Why Choose Us</h4>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.</p>
-        <blockquote> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-          <p> <small><b>Sarfraz Shoukat</b> - Owner <a href="#">Greepit.com</a></small></p>
+        <p> <strong> We know technology. </strong>
+          We're dedicated to giving you the best service possible. And we'll prove it. If you're not completely satisfied,
+		  we'll do our best to correct the problem. Fast and free. To us, technology is like fine art. Nobody loves it more than we do. 
+		  We pledge to pamper it and give it the white glove treatment every time.         
+          </p>
+        <blockquote> Water is the most critical resource issue of our lifetime and our children's lifetime.
+		  The health of our waters is the principal measure of how we live on the land."
+          <p> <small><b> Luna Leopold </b></small></p>
         </blockquote>
         <div class="clear"> </div>
       </div>
@@ -266,15 +266,15 @@
         </fieldset>
         <div class="clear"> </div>
         <ul class="social_icons">
-          <li><a href="#" id="tw" original-title="Follow Me on Twitter"> <img src="images/twitter.png" alt="Twitter" /></a></li>
-          <li><a href="#" id="ld" original-title="Find me on Google+"> <img src="images/g+.png" alt="Google+" /></a></li>
-          <li><a href="#" id="fb" original-title="Join My Fan Club"> <img src="images/facebook.png" alt="Facebook" /></a></li>
+          <li><a href="https://twitter.com/Private_S90" target="_blank" id="Private_S90" original-title="Follow Me on Twitter"> <img src="images/twitter.png" alt="Twitter" /></a></li>
+          <li><a href="https://plus.google.com/u/0/105477585963841084894/profile/p/pub" target="_blank" id="siddharth.gautam@iic.ac.in" original-title="Find me on Google+"> <img src="images/g+.png" alt="Google+" /></a></li>
+          <li><a href="https://www.facebook.com/siddharth.gautam.79" target="_blank" id="sid_coolgautam@yahoo.co.in" original-title="Join My Fan Club"> <img src="images/facebook.png" alt="Facebook" /></a></li>
         </ul>
       </div>
     </div>
     <div class="footer">
-      <p> &copy; 2012 <a href="http://eGrappler.com">eGrappler.com</a>. Some Rights Reserved.</p>
-      <p> Designed With Love by <a href="http://esarfraz.com">Sarfraz Shoukat</a></p>
+      <p> &copy; 2013, Some Rights Reserved.</p>
+      <p> Designed by Siddharth/Vineeta</p>
     </div>
   </div>
 </div>
