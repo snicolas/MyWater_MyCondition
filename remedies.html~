@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Tabbed Content using </title>
+ 
+ <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+ <script type="text/javascript"  src="js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript"  src="js/bootstrap.min.js"></script>
+ <script type="text/javascript"  src="js/customtabs.js"></script>
+</head>

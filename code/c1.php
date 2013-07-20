@@ -1,0 +1,159 @@
+<?php include "connect.php";?>
+<!doctype html>
+<html>
+<head>
+ <title>Water save it! </title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!added for bootstrap>
+
+ <link rel="stylesheet" type="text/css" media="all" href="styles/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" media="all" href="styles/styles.css">
+<link rel="stylesheet" href="styles/bootstrap.css" media="screen" /><!added for bootstrap>
+<link rel="stylesheet" href="styles/style.css" media="screen" />
+<link rel="stylesheet" href="styles/media-queries.css" />
+<link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
+<link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="styles/bootstrap-responsive.css" media="screen" />
+
+
+<script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+
+<script src="scripts/jquery.knob.js" type="text/javascript"></script>
+<script type="text/javascript" src="./scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="./scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="./scripts/setup.js"></script>
+
+ <script type="text/javascript"  src="./scripts/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript"  src="./scripts/bootstrap.min.js"></script>
+ <script type="text/javascript"  src="./scripts/customtabs.js"></script>
+</head>
+<body>
+<div id="wrap"> 
+  <!-- wrapper -->
+  <div id="sidebar"> 
+    <!-- the  sidebar --> 
+    <!-- logo --> 
+    <a href="#" id="logo"> <img src="./images/q.png" alt="hello" /></a> 
+    <!-- navigation menu -->
+    <ul id="navigation">
+      <li><a href="#home" class="active">Home</a></li>	
+      <li><a href="#map">Map</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#purification">Purification</a></li>
+      <li><a href="#harvest">Harvest</a></li>
+      <li><a href="#sources">Sources</a></li>
+      <li><a href="#meetus">Meet Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="container"> 
+
+    <div class="page" id="harvest"> 
+      <!-- page harvesting -->
+      <h3 class="page_title"> Harvesting </h3>
+      <div class="page_content">
+			<p><strong>Rainwater harvesting</strong> is the accumulation and deposition of rainwater for reuse before it reaches the aquifer. 
+			Uses include water for garden, water for livestock, water for irrigation, etc. In many places the water collected is just redirected to a deep 
+			pit with percolation. The harvested water can be used for drinking water as well if the storage is a tank that can be accessed and cleaned when
+			needed.<a href="http://en.wikipedia.org/wiki/Rainwater_harvesting" target="_blank" style="text-decoration:none;"> [ Wikipedia link ] </a> </p><br>
+			
+	 		<p><strong>RainWater Harvesting in India</strong> -<a href="http://www.mppcb.nic.in/RWH.htm" target="_blank" style="text-decoration:none;"> <strong>Madhya Pradesh Pollution Control Board </strong> </a>is providing the usefull information for the Harvesting Methods.</p>
+			<p><br><a href="http://www.tn.gov.in/dtp/rainwater.htm" target="_blank" style="text-decoration:none;"><strong>Tamil Nadu Govt. </strong></a> is providing it's own Methods.</p><br>
+			<p> <strong> .ORG - </strong>Demand for water is growing in most cities as every urban citizen requires almost double the amount of water that a rural citizen requires. Moreover, 
+			India is rapidly urbanising. <a href="" target="_blank" style="text-decoration:none;"> [ RainWaterHarvesting.org ]</a></p>
+        
+             
+        <div class="clear"> </div>
+      </div>
+    </div>
+
+	
+      <div class="page" id="cause"> 
+      <!-- page cause-->
+      <h3 class="page_title"> Condition in my area </h3>
+      <div class="page_content">
+	
+<?php 
+ //$B=$_POST['district'];
+$B='RAMANAGARAM';?>
+ <h3 align="center"> <?php echo $B."<br>";?></h3>
+
+
+
+<?php             
+                
+           if($B)
+             {
+ 		$data = mysql_query("SELECT DISTINCT state ,district ,quality from `2009` having district='$B' ")  or die(mysql_error()); 
+
+ 		while($info = mysql_fetch_array( $data )) 
+ 		{ echo $C=$info['quality'];
+		Print "<table border cellpadding=3> "; 
+ 		Print "<br><tr>"; 
+ 		Print "<th>State:</th><td>".$info['state'] . "</td> ";
+                Print "<th>District:</th> <td>".$info['district'] . " </td>"; 
+ 		Print "<th>Quality:</th> <td>".$info['quality'] . "</td> </tr>";
+		Print "</table>";
+		$sql=mysql_fetch_array(mysql_query(" SELECT * from `qualitysheet` where QUALITY= '$C' ")) or die(mysql_error());
+?>
+
+
+
+    <div class="row">
+      <div class="span12">
+       
+        <p>WATER CONDITION IN MY AREA</p>
+   
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#cause" data-toggle="tab">CAUSE</a></li>
+          <li><a href="#impact" data-toggle="tab">IMPACT</a></li>
+          <li><a href="#remedies" data-toggle="tab">REMEDIES</a></li>
+        </ul>
+            
+        <div class="tab-content">
+          <div class="tab-pane active" id="cause">
+            <h3>CAUSE</h3>
+            <p><?php echo $sql['CAUSE'];?></p>
+            
+            <p class="text-center">HELLO</p>
+          </div><!-- @end #cause -->
+          
+          <div class="tab-pane" id="impact">
+            <h3>IMPACT</h3>
+            
+            <p><?php echo $sql['IMPACT'];?></p>
+          </div><!-- @end #impact-->
+          
+          <div class="tab-pane" id="remedies">
+            <h3>REMEDIES</h3>
+            <div class="row">
+              <div class="span4"><h4>purify</h4>
+            <p><?php echo $sql['REMEDIES'];?></p></div>
+            </div>
+                        
+           
+
+          </div><!-- @end #remedies-->
+       
+        </div><!-- @end .tab-content -->
+        
+      </div><!-- @end .span12 -->
+    </div><!-- @end .row -->
+
+<?php  }}?>
+
+
+
+        <div class="clear"> </div>
+      
+
+	</div>
+    </div>
+
+	</div>
+    </div>
+
+</body>
+</html>      
