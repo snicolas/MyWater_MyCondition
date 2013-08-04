@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Water-Save it</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="styles/bootstrap-responsive.css" media="screen" />
+<link rel="stylesheet" href="styles/bootstrap.css" media="screen" />
+
+
+<link rel="stylesheet" href="styles/styles.css" media="screen" />
+<link rel="stylesheet" href="styles/style.css" media="screen" />
+<link rel="stylesheet" href="./flex-slider/flexslider.css" type="text/css" media="screen" />
+<link href="styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="styles/tipsy.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="styles/jquery.autocomplete.css" />
+
+<link rel="stylesheet" href="styles/media-queries.css" />
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+
+
+<!--added for bootstrap-->
+<script type="text/javascript" src="./scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery-1.4.2.js"></script><!--added for bootstrap-->
+<script type="text/javascript" src="./scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./flex-slider/jquery.flexslider-min.js"></script>
+<script src="scripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script type='text/javascript' src="./scripts/jquery.autocomplete.js"></script>
+<script src="scripts/jquery.tipsy.js" type="text/javascript"></script>
+<script src="scripts/jquery.knob.js" type="text/javascript"></script>
+<script type="text/javascript" src="./scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./scripts/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="./scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="./scripts/setup.js"></script>
+<script type="text/javascript">
+$().ready(function() {
+	$("#st").autocomplete("autoCompleteMain.php", {
+		width: 200,
+		matchContains: true,
+		//mustMatch: true,
+		//minChars: 0,
+		//multiple: true,
+		//highlight: false,
+		//multipleSeparator: ",",
+		selectFirst: false
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="wrap"> 
+  <!-- wrapper -->
+  <div id="sidebar"> 
+    <!-- the  sidebar --> 
+    <!-- logo --> 
+    <a href="#" id="logo"> <img src="./images/q.png" alt="hello" /></a> 
+    <!-- navigation menu -->
+    <ul id="navigation">
+      <li><a href="#home" class="active">Home</a></li>	
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#purification">Purification</a></li>
+      <li><a href="#harvest">Harvest</a></li>
+      <li><a href="#sources">Sources</a></li>
+      <li><a href="#meetus">Meet Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="container"> 
+    <!-- page container -->
+    <div class="page" id="home"> 
+      <!-- page home -->
+      <div class="page_content">
+        <div class="gf-slider"> 
+          <!-- slider -->
+          <ul class="slides">
+            <li> <img src="images/f1.jpg" alt="" />
+              <p class="flex-caption"> World Water Week - September 1-6 </p>
+            </li>
+            <li> <img src="images/f29.jpg" alt="" />
+              <p class="flex-caption"> Earth Day - April 22 </p>
+            </li>
+            <li> <img src="images/f27.jpg" alt="" />
+              <p class="flex-caption"> Save it </p>
+            </li>
+            <li> <img src="images/f28.jpg" alt="" />
+              <p class="flex-caption"> Save it </p>
+            </li>
+            <li> <img src="images/f30.jpg" alt="" />
+              <p class="flex-caption"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="space"> </div>
+        <div class="clear"> </div>
+
+<!-----SEARCH------->
+   <!-- <br><form class="form-search" style="width: 260px; margin: 0 auto;" action="state.php" method="POST"> 
+	<button type="submit" style="width: 220px; margin: 0 auto; color: darkgreen; background-color: grey; border: 2pt ridge grey;" class="btn" name="search" value="1" >Search</button> 
+	</form>-->
+	<div id="page_content" >
+	<form autocomplete="off" style="width: 260px; margin: 0 auto;" action="c1.php" method="POST" >
+		<div class="span6">
+                <strong>Enter State/District Name</strong><br>
+			
+		<input type="text" name="st" id="st" style="width: 220px; color: darkgreen" />
+		
+		<input type="submit" style="width: 235px;" value="Submit" class=" btn btn-inverse "/></div>
+	</form>
+	</div>
+        <!-- services -->
+        <div class="one_half first">
+          <div class="column_content">
+            <h4> Love it!</h4>
+            <img src="images/coded-with-love.png" class="left no_border" alt="" style="margin-top: 10px;
+                                margin-right: 10px" />
+            <p> <small><a href="http://www.okeanosgroup.com/blog/uncategorized/5-psychological-reasons-why-humans-love-water/" target="_blank" style="text-decoration:none;" > 5 Psychological Reasons Why Humans Love Water.
+				Posted by Dabney B.
+              </a></small></p>
+          </div>
+        </div>
+        <div class="one_half last">
+          <div class="column_content">
+            <h4> Article</h4>
+            <img src="images/articles.jpg" class="left no_border" alt="" style="margin-top: 10px;
+                                margin-right: 10px" />
+            <p> <small><a href="http://www.globalonenessproject.org/people/vandana-shiva?gclid=CIvBu8Tim7gCFaoB4godCWgA0g" target="_blank" style="text-decoration:none;"> Global Oneness Project- Vandana Shiva
+              Trained as a physicist and a philosopher, Dr. Vandan Shiva is a world-renowned expert and activist on issues of agriculture, 
+			  food and social justice.</a></small></p>
+          </div>
+        </div>
+        <div class="space"> </div>
+        <div class="one_half first">
+          <div class="column_content">
+            <h4> News</h4>
+            <img src="./images/news.jpg" class="left no_border" alt="" style="margin-top: 10px;
+                                margin-right: 10px" />
+            <p> <small><a href="http://timesofindia.indiatimes.com/topic/Water/news/" target="_blank" style="text-decoration:none;"> Water News- Times Of India</a></small><br>
+             <small><a href="http://articles.timesofindia.indiatimes.com/2012-08-14/pune/33200865_1_water-tanker-water-shortage-water-problem" target="_blank"style="text-decoration:none;"> Harvesting News <a>
+			 </small></p>
+          </div>
+        </div>
+        <div class="one_half last">
+          <div class="column_content">
+            <h4> Disaster </h4>
+            <img src="./images/plus1.gif" class="left no_border" alt="" style="margin-top: 10px;
+                                margin-right: 10px" />
+            <p> <small><a href="http://drbenkim.com/drink-too-much-water-dangerous.html" target="_blank" style="text-decoration:none;">Why Drinking Too Much Water Can Be Harmful To Your Health
+              Posted By Dr. Ben Kim</a> </small></p>
+          </div>
+        </div>
+        <div class="space"> </div>
+        <div class="one_half first">
+          <div class="column_content">
+            <h4> FRANK - Non-Govt Org. </h4>
+            <img src="./images/ngo.jpg" class="left no_border" alt="" style="margin-top: 10px;
+                                margin-right: 10px" />
+            <p><small><a href="http://www.frankwater.com/" target="_blank" style="text-decoration:none;"> Water is a small Bristol based team of ethical entrepreneurs, 
+			researchers and field workers that funds sustainable clean water projects in developing
+			countries across the world.</a></small> </p>
+          </div>
+        </div>
+        
+        <div class="clear"> </div>
+      </div>
+    </div>
+
+
+<a class="gotop" href="#top">Top</a>
+ <div class="page" id="gallery"> 
+      <!-- page Gallery -->
+	  <h3 class="page_title"> Gallery </h3>
+      <div class="page_content">
+        <p><strong> Water </strong> is an essential resource for life and good health. A lack of water to meet daily needs is a reality today for one in three people around the world. 
+          Globally, the problem is getting worse as cities and populations grow, and the needs for water increase in agriculture, industry and households.
+          This fact file highlights the health consequences of water scarcity, its impact on daily life and how it could impede international development. It urges everyone to be part of efforts to conserve and protect the resource.</p>
+        <ul id="works_filter">
+          <li><a href="#" data-filter="*" class="selected">Show All</a></li>
+          <li><a href="#" data-filter=".css">Happiness</a></li>
+          <li><a href="#" data-filter=".html_php">Save it</a></li>
+          <li><a href="#" data-filter=".js">Living on Edge</a></li>
+        </ul>
+        <div class="clear"> </div>
+        <div id="works"> 
+          <!-- works --> 
+          <a rel="prettyPhoto[gallery]" href="images/photos/11.jpg"> <img class="work js" src="images/photos/11.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/17.jpg"> <img class="work css" src="images/photos/17.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/24.jpg"> <img class="work html_php" src="images/photos/24.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/14.jpg"> <img class="work html_php" src="images/photos/14.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/25.jpg"> <img class="work css" src="images/photos/25.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/20.jpg"> <img class="work js" src="images/photos/20.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/13.jpg"> <img class="work html_php" src="./images/photos/13.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/22.jpg"> <img class="work js" src="images/photos/22.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/28.jpg"> <img class="work html_php" src="images/photos/28.jpg" alt="" /> </a> </div>
+        <div class="clear"> </div>
+      </div>
+      
+    </div>
+<a class="gotop" href="#top">Top</a>
+    <div class="page" id="purification"> 
+      <!-- page purification -->
+	  <h3 class="page_title"> Purifications </h3>
+      <div class="page_content">
+        <p> <strong>Water purification </strong>is the process of removing undesirable chemicals, biological contaminants, suspended solids and gases from contaminated water.
+      		The goal is to produce water fit for a specific purpose. Most water is purified for human consumption (drinking water), but water purification may
+			also be designed for a variety of other purposes, including meeting the requirements of medical, pharmacological, chemical and industrial
+			applications. In general the methods used include physical processes such as filtration, sedimentation, and distillation, biological processes
+			such as slow sand filters or biologically active carbon, chemical processes such as flocculation and chlorination and the use of
+			electromagnetic radiation such as ultraviolet light.</p><br>
+			<p><b>How to Purify Water </b>-  When the water you're hoping to drink might be riddled with parasites or bacteria,
+			you can't afford to skimp on water purification. In the very circumstances that put you in contact with questionable water (being in the wilderness,
+			surviving or recovering from a disaster, or living in a part of the world where water isn't purified for you) the last thing you want to do is to 
+			get sick. Click on the following to purify water yourself.<a href="http://www.wikihow.com/Purify-Water" target="-blank" style="text-decoration:none;"> [ WikiHow ] </a></p><br>
+			<strong>Methods of Water Purification</strong>- Water treatment can be defined as any procedure or method used to alter the chemical composition or natural "behavior" of a water supply. 
+			Water supplies are classified as either surface water or groundwater. The majority of public or municipal water comes from surface water such 
+			as rivers, lakes, and reservoirs.The majority of private water supplies consist of groundwater pumped from wells.<a href="http://www.waterforliving.com/files/Methods_of_Water_Purification.htm" target="_blank" style="text-decoration:none;">[WaterforLiving]</a>
+
+        <div class="space"> </div>
+        <div class="clear"> </div>
+        <div class="clear"> </div>
+      </div>
+	  
+      
+    </div>
+<a class="gotop" href="#top">Top</a>
+    <div class="page" id="harvest"> 
+      <!-- page harvesting -->
+      <h3 class="page_title"> Harvesting </h3>
+      <div class="page_content">
+			<p><strong>Rainwater harvesting</strong> is the accumulation and deposition of rainwater for reuse before it reaches the aquifer. 
+			Uses include water for garden, water for livestock, water for irrigation, etc. In many places the water collected is just redirected to a deep 
+			pit with percolation. The harvested water can be used for drinking water as well if the storage is a tank that can be accessed and cleaned when
+			needed.<a href="http://en.wikipedia.org/wiki/Rainwater_harvesting" target="_blank" style="text-decoration:none;"> [ Wikipedia link ] </a> </p><br>
+			
+	 		<p><strong>RainWater Harvesting in India</strong> -<a href="http://www.mppcb.nic.in/RWH.htm" target="_blank" style="text-decoration:none;"> <strong>Madhya Pradesh Pollution Control Board </strong> </a>is providing the usefull information for the Harvesting Methods.</p>
+			<p><br><a href="http://www.tn.gov.in/dtp/rainwater.htm" target="_blank" style="text-decoration:none;"><strong>Tamil Nadu Govt. </strong></a> is providing it's own Methods.</p><br>
+			<p> <strong> .ORG - </strong>Demand for water is growing in most cities as every urban citizen requires almost double the amount of water that a rural citizen requires. Moreover, 
+			India is rapidly urbanising. <a href="" target="_blank" style="text-decoration:none;"> [ RainWaterHarvesting.org ]</a></p>
+        
+             
+        <div class="clear"> </div>
+      </div>
+    </div>
+<a class="gotop" href="#top">Top</a>
+    <div class="page" id="sources"> 
+      <!-- page sources -->
+	  <h3 class="page_title"> Our Sources </h3>
+      <div class="page_content">
+        <p>We have drawn data from a wide range of sources. These include public sources like the Data Portal India ,NRDWP, Unicef, as well as departments and agencies of the Government of India. While in most cases all the visualization and analyses you will see here are built from  data given at <b>data.gov.in</b>. </p>
+        <div class="space"> </div>
+        <div class="clear"> </div>
+        <ul id="clients" class="grid">
+          <li class="altoids"><a href="#" rel="altoids"> <img src="images/clients/datagov.gif" alt="datagov"/></a></li>
+          <li class="facebook"><a href="#" rel="facebook"> <img src="images/clients/wpi1.png" alt="waterportalindia"></a></li>
+          <li class="ge"><a href="#" rel="general-electric"> <img src="images/clients/unicef1.gif" alt="unicef"></a></li>
+          <li class="orbit"><a href="#" rel="orbit"> <img src="images/clients/who.gif" alt="worldhealthorg."></a></li>
+          <li class="skittles"><a href="#" rel="skittles"> <img src="images/clients/google.png" alt="google"></a></li>
+          <li class="jameson"><a href="#" rel="jameson"> <img src="images/clients/frank.gif" alt="frank"></a></li>
+          <li class="juicy_fruit"><a href="#" rel="juicy-fruit"> <img src="images/clients/t1.png" alt="socialmedia"></a></li>
+          <li class="microsoft"><a href="#" rel="microsoft"> <img src="images/clients/pureit.gif" alt="purecharity"></a></li>
+          </ul>
+        <div class="clear"> </div>
+      </div>
+      
+    </div>
+<a class="gotop" href="#top">Top</a>
+    <div class="page" id="meetus"> 
+      <!-- page about us -->
+	  <h3 class="page_title"> Meet Us</h3>
+      <div class="page_content">
+        <p> We are the Team of Two. We are working for the first time together on a Web-Application using OpenSource.
+		    We have worked very well for this project and understood many new languages. We have our Personal blogs on GitHub( <a href="https://github.com/siddharthgautam" target="_blank"> <b>Siddharth Gautam</b></a> , <a href=" https://github.com/vineetamehta" target="_blank"> <b>Vineeta Mehta</b></a> ).
+		    And we also have Repository on GitHub for our Project - <br> SiddharthGautam :<a href="http://github.com/siddharthgautam/MyWater-MyCondition.git" target="_blank"> <b>My Water-My Condition</b></a><br>Vineeta Mehta:<a href="https://github.com/vineetamehta/MyWater_MyCondition.git" target="_blank"><b>    My Water-My Condition</b></a>
+			<br><br>This idea was given by<a href="https://plus.google.com/u/0/108261062959593204280/posts" target="_blank"><b> Mr.Senthil Raja S </b></a>in the competition 'In Pursuit Of an Idea' conducted by NIC.He and <a href="www.linkedin.com/in/sndipan" target="_blank"> <b>Sandipan Rawat </b></a>has mentored us throughout the development phase of this Application.
+			Special thanks to <a href="https://twitter.com/satyaakam" target="_blank"><b>Satyaakam</b></a> and ideadu for helping us throughout the Project.<br><br><p class="blue" align="center" ><a href="waterPureIt.pdf">Resource</a></p>
+        <h4 class="blue"> Why Choose Us</h4>
+        <p> <strong> We know technology. </strong>
+          We're dedicated to giving you the best service possible. And we'll prove it. If you're not completely satisfied,
+		  we'll do our best to correct the problem. Fast and free. To us, technology is like fine art. Nobody loves it more than we do. 
+		  We pledge to pamper it and give it the white glove treatment every time.         
+          </p>
+        <blockquote> Water is the most critical resource issue of our lifetime and our children's lifetime.
+		  The health of our waters is the principal measure of how we live on the land."
+          <p> <b>- Luna Leopold </b></p>
+        </blockquote>
+        <div class="clear"> </div>
+      </div>
+      
+    </div>
+<a class="gotop" href="#top">Top</a>
+    <div class="page" id="contact"> 
+      <!-- page contact -->
+      <h3 class="page_title"> Let's Get in Touch</h3>
+      <div class="page_content">
+        <fieldset id="contact_form">
+          <div id="msgs"> </div>
+          <form id="cform" name="cform" method="post" action="contact.php">
+            <input type="text" id="name" name="name" value="Full Name*" onfocus="if(this.value == 'Full Name*') this.value = ''"
+                            onblur="if(this.value == '') this.value = 'Full Name*'" required='true' />
+            <input type="text" id="email" name="email" value="Email Address*" onfocus="if(this.value == 'Email Address*') this.value = ''"
+                            onblur="if(this.value == '') this.value = 'Email Address*'" required='true' />
+            <input type="text" id="subject" name="subject" value="Subject*" onfocus="if(this.value == 'Subject*') this.value = ''"
+                            onblur="if(this.value == '') this.value = 'Subject*'" required='true' />
+            <textarea id="msg" name="msg" onfocus="if(this.value == 'Your Message*') this.value = ''"
+                            onblur="if(this.value == '') this.value = 'Your Message*'" required='true'>Your Message*</textarea>
+            <button id="submit" class="button"> Send Message</button>
+          </form>
+        </fieldset>
+        <div class="clear"> </div>
+        <ul class="social_icons">
+          <li><a href="https://twitter.com/waterconditions" target="_blank" id="Private_S90" original-title="Follow Me on Twitter"> <img src="images/twitter.png" alt="Twitter" /></a></li>
+          <li><a href="https://plus.google.com/u/0/105477585963841084894/profile/p/pub" target="_blank" id="siddharth.gautam@iic.ac.in" original-title="Find me on Google+"> <img src="images/g+++.png" alt="Google+" /></a></li>
+          <li><a href="https://www.facebook.com/watercondition" target="_blank" id="vineeta.nikki@gmail.com" original-title="Join My Fan Club"> <img src="images/facebook.png" alt="Facebook" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <p> &copy; 2013, Some Rights Reserved.</p>
+      <p> Designed by Siddharth Gautam/Vineeta Mehta</p>
+    </div>
+  </div>
+</div>
+<a class="gotop" href="#top">Top</a>
+
+<script type="text/javascript">stLight.options({publisher: "ur-594f788a-2a97-de71-fd88-586687f64503", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "ur-594f788a-2a97-de71-fd88-586687f64503", "logo": { "visible": true, "url": "http://project.iic.ac.in/nic/AnD", "img": "http://sd.sharethis.com/disc/images/demo_logo.png", "height": 45}, "ad": { "visible": false, "openDelay": "5", "closeDelay": "0"}, "livestream": { "domain": "", "type": "sharethis"}, "ticker": { "visible": false, "domain": "", "title": "", "type": "sharethis"}, "facebook": { "visible": false, "profile": "sharethis"}, "fblike": { "visible": true, "url": "http://www.facebook.com/watercondition"}, "twitter": { "visible": false, "user": "sharethis"}, "twfollow": { "visible": true, "url": "http://twitter.com/waterconditions"}, "custom": [{ "visible": false, "title": "Custom 1", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 2", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 3", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}], "chicklets": { "items": ["facebook", "googleplus", "twitter", "email"]}};
+var st_bar_widget = new sharethis.widgets.sharebar(options);
+</script>
+</body>
+</html>

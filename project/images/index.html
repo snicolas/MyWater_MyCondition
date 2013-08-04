@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Postal Pocket</title>   
+
+<meta name="description" content="Postal Pocket" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+<!-- Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'Insert Your Code']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- End Analytics -->
+
+<link rel="stylesheet" href="css/ex.css" type="text/css">
+<style type="text/css">
+div#tipDiv {
+    font-size:11px; 
+    color:#000; background-color:#E1E5F1; 
+    border:1px solid #667295; 
+    padding:4px;
+    width:200px; 
+}
+
+/* for optional caption */
+div#tipDiv div.caption {
+    font-size:12px; 
+    font-weight:bold; text-align:center;
+    margin-bottom:6px;
+    }
+
+/* wrapTextByImage: side-by-side in td */
+div#tipDiv td { 
+    vertical-align:top; 
+    font-size:11px;
+    padding:0; 
+    }
+/* divs with classes img and txt in all image-text formatting functions */
+div#tipDiv td div.txt { 
+    text-align:left; 
+    padding-right:4px; 
+    }
+</style>
+
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+dw_Tooltip.defaultProps = {
+    //supportTouch: true, // set false by default
+    wrapFn: dw_Tooltip.wrapTextByImage
+}
+// See info on image-text functions at http://www.dyn-web.com/code/tooltips/documentation2.php#img_txt
+// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+
+dw_Tooltip.content_vars = {
+    L1: {
+        caption: 'Parul Midha', // optional caption 
+        img: 'images/parul2.jpg',
+        txt: 'Parul has worked on the front end and the PHP code for the both applications.',
+        w: 350
+    },
+	L2: {
+        caption: 'Aanchal Nagpal', // optional caption 
+        img: 'images/aanchal2.jpg',
+        txt: 'Aanchal has worked on the front end and the PHP code for the both applications.',
+        w: 350
+    },
+	L3: {
+        caption: 'Shubh Shekhar', // optional caption 
+        img: 'images/shubh2.jpg',
+        txt: 'Shubh is the idea person and mentor for this project.',
+        w: 350
+    },
+	L4: {
+        caption: 'Satyaakam Goswami', // optional caption 
+        img: 'images/satya2.jpg',
+        txt: 'Satyaakam is our project coordinator for this project.',
+        w: 350
+    }
+}
+
+</script>
+</head>
+
+
+<body>
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <!-- <div class="overlay"></div> -->
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">Postal Pocket
+        	<a id="goUp" href="#home-slider" title="Postal Pocket">Postal Pocket</a>
+        </div>
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+            	<li class="current"><a href="#home-slider">Home</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="work" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title">Our Work</h2>
+                    <h3 class="title-description">Check out our applications.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+        <!-- Portfolio Projects -->
+        <div class="row">
+        <div class="span3">
+            	<!-- Filter -->
+               <!--  <nav id="options" class="work-nav">
+                    <ul id="filters" class="option-set" data-option-key="filter">
+                    	<li class="type-work">Type of Work</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                        <li><a href="#filter" data-option-value=".design">Design</a></li>
+                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                        <li><a href="#filter" data-option-value=".video">Video</a></li>
+                    </ul>
+                </nav> -->
+                <!-- End Filter -->
+            </div> 
+            
+            <div class="span9">
+            	<div class="row">
+                	<section id="projects">
+                    	<ul id="thumbs">
+                        
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                             <a title="Domestic" href="tariff_calculator.php">
+                                <img src="img/india-on-globe.png" height="250px" width="250px" alt="Domestic Tariff Calculator">
+                                </a><br><br>
+<a style="font-family: Papyrus" href="tariff_calculator.php">DOMESTIC TARIFF CALCULATOR		</a>		
+                                <!-- Thumb Image and Description -->
+                                
+                            </li>
+                        	<!-- End Item Project -->
+                            
+							<!-- Item Project and Filter Name -->
+                        	<li class="item-thumbs span3 design">
+                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                             <a title="International" href="tariff_international.php">
+                                <img src="img/globe-spinning.gif" height="250px" width="250px" alt="International Tariff Calculator">
+                                </a><br><br>
+				<a style="font-family: Papyrus"href="tariff_international.php">INTERNATIONAL TARIFF CALCULATOR</a>	
+                                <!-- Thumb Image and Description -->
+                                
+                            </li>
+                        	<!-- End Item Project -->
+                            
+                        </ul>
+                    </section>
+                    
+            	</div>
+            </div>
+        </div>
+        <!-- End Portfolio Projects -->
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="about" class="page-alternate">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">About Us</h2>
+                <h3 class="title-description">“Want more information on posts and the best way to send them? Postal Pocket gives you the solutions you need.”</h3><br>
+
+<p class="profile-description" >Our team, Technocrats is a group of four and this application is our summer project. We are students of Institute of Informatics and Communication, Delhi University. We owe a huge thanks to NIC for joining us on this awesome journey, and we hope that you’ll continue to be a part of our story.<br>
+
+
+POSTAL POCKET is a postal tariff calculator which offers you the best postal services at your doorstep. You can choose services for both domestic and international postal services. Once you enter your specifications, we give you the best way to send your posts anywhere and everywhere. It calculates the tariff for sending your article anywhere in few seconds!</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row">
+    	
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Core Values</span>
+                </div>
+                <img src="_include/img/imgserver.jpeg" alt="Values">
+            </div>
+            <h3 class="profile-name">Core Values</h3>
+            <p class="profile-description">
+We share an appropriate set of values to ensure our team takes responsibility to deliver outstanding work for clients with integrity and performance standards that are second to none. Our values are the one area in the firm in which there is no room for diversity. 
+
+Teamwork:
+
+Our work depends on cooperation and teamwork; there is no room for prima donnas. 
+
+Outstanding work:
+
+Maintaining high work standards means that we are prepared to work as hard and as long as is necessary to get the job done to the best level it can possibly be done. We will not let a problem beat us. 
+
+          
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Strategic Goals</span>
+                </div>
+                <img src="_include/img/strategicnew.jpeg" alt="strategic">
+            </div>
+            <h3 class="profile-name">Strategic Goals</h3>
+            <p class="profile-description">
+Develop, implement and operate a system of standards with accountability for performance.
+
+
+Be the preferred, trusted and reliable service partner for all customers.
+
+
+Be the interface between citizens and the government.
+
+
+Always providing the human touch in all our interactions with society.
+
+
+Being responsive and reliable.
+
+
+Demonstrating the highest order of integrity, honesty, transparency and professionalism.
+
+
+Discharging our responsibilities towards the society in an environment of deep trust, mutual respect and a culture of service before self.
+           
+        </div>
+        <!-- End Profile -->
+        
+        <!-- Start Profile -->
+    	<div class="span4 profile">
+        	<div class="image-wrap">
+                <div class="hover-wrap">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-text-thumb">Mission</span>
+                </div>
+                <img src="_include/img/plannew.jpeg" alt="Mission">
+            </div>
+            <h3 class="profile-name">Mission</h3>
+            <p class="profile-description">Client Focus:
+
+We care about our clients. We can make commitments to clients that reflect a balanced set of priorities, and deliver on our commitments. We can never let a client down. 
+
+Readiness to change:
+
+Technology and business move very quickly. Each member of the team must stay open to new ideas, new technologies and new ways of doing business. The way we perform tasks today isn't going to be viable forever. It is inevitable that we will need to adapt to new demands and new ways of delivering value in the future. 
+
+Personal responsibility:
+
+Our team is ultimately responsible for our own development and performance. The team will encourage, support and help in every way possible.
+          
+        </div>
+        <!-- End Profile -->
+        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+<!-- Contact Section -->
+<div id="contact" class="page">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Get in Touch</h2>
+                <h3 class="title-description">Contact us to know more about us and our upcoming projects.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- Contact Form -->
+    <div class="row">
+    	<div class="span9">
+        
+        	<form id="contact-form" class="contact-form" action="#">
+            	<p class="contact-name">
+            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+                </p>
+                <p class="contact-email">
+                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                </p>
+                <p class="contact-message">
+                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                </p>
+                <p class="contact-submit">
+                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                </p>
+                
+                <div id="response">
+                
+                </div>
+            </form>
+         
+        </div>
+        
+        <div class="span3">
+        	<div class="contact-details">
+        		<h3>Contact Details</h3>
+				Hover over for more details...
+                <ul>
+					<li  id="cont"><a href="mailto:parul.midha@iic.ac.in" class="showTip L1">Parul Midha</a></li>
+					<li  id="cont"><a href="mailto:aanchal.nagpal@iic.ac.in" class="showTip L2">Aanchal Nagpal</a></li><br>
+					and special thanks to : <br>
+					<li  id="cont"><a href="mailto:subhransu.sm@gmail.com" class="showTip L3">Subh Shekhar</a></li>
+					<li  id="cont"><a href="mailto:satyaakam@gmail.com" class="showTip L4">Satyaakam Goswami</a></li>
+				</ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Form -->
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Twitter Feed
+<div id="twitter-feed" class="page-alternate">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <div class="follow">
+                    <a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><i class="font-icon-social-twitter"></i></a>
+                </div>
+                    
+                <div id="ticker" class="query"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+End Twitter Feed -->
+
+<!-- Socialize 
+<div id="social-area" class="page">
+	<div class="container">
+    	<div class="row">
+            <div class="span12">
+                <nav id="social">
+                    <ul>
+                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+                        <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
+                        <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
+                        <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
+                        <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
+                        <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+                        <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
+                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+End Socialize -->
+
+<!-- Footer -->
+<footer>
+	<p class="credits">&copy;2013 Postal Pocket. Developed and maintained by Technocrats.</p>
+</footer>
+<!-- End Footer -->
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<script src="_include/js/jquery-1.7.1.min.js"></script> <!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
+<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
+<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/main.js"></script> <!-- Default JS -->
+<!-- End Js -->
+
+</body>
+</html>
